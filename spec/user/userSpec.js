@@ -2,7 +2,7 @@ const dbURI = process.env.MONGO_DB_URI;
 const should = require('chai').should();
 const mongoose = require('mongoose');
 
-var url = 'mongodb://root:root@ds237717.mlab.com:37717/nodejsshoppingcart';
+var url = 'mongodb://root:root@ds137220.mlab.com:37220/shoppingcart-db';
 var User = require('../../models/user');
 
 describe("User test suite", () => {
