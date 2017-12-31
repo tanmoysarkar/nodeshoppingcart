@@ -1,0 +1,39 @@
+{{# if products }}
+    <div class="row">
+        <div class="col-xs-6 col-sm-offset-3">
+            <ul class="list-group">
+                {{# each products }}
+                    <li class="list-group-item">
+                        <span class="badge">{{ this.qty }}</span>
+                        <strong>{{ this.item.name }}</strong>
+                        <span class="label  item-price">₹ {{ this.price }}</span>
+                        <div class="btn-group remove-all">
+
+                            <a href="/reduce/{{this.item._id}}"><span class="badge"><i class="fa fa-minus" aria-hidden="true" title= "Remove One"></span></i> </a>
+                            <a href="/remove/{{this.item._id}}" title="Remove all"><i class="fa fa-trash-o"" aria-hidden="true"></i></a>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-offset-3">
+            <strong>Total: ₹ {{ totalPrice }}</strong>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-2 col-sm-offset-3">
+            <a href="/" type="button" class="btn btn-success"><i class="fa fa-arrow-left" aria-hidden="true"> Continue Shopping</i> </a>
+        </div>
+    </div>
+{{ else }}
+    <div class="row">
+        <div class="col-xs-6 col-sm-offset-3">
+            <h2>No shopping cart items</h2>
+            <a href="/" type="button" class="btn btn-success"><i class="fa fa-arrow-left" aria-hidden="true"> Continue Shopping</i> </a>
+        </div>
+    </div>
+{{/if}}
+

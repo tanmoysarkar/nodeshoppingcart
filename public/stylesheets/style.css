@@ -1,0 +1,22 @@
+.thumbnail img {
+    max-height: 200px;
+}
+.badge{
+	background-color: red;
+}
+
+.thumbnail .description {
+    color: #7f7f7f;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+.remove-all{
+	margin-left: 100px;
+}
+.item-price{
+	color: #000;
+    font-size: 16px;
+}
