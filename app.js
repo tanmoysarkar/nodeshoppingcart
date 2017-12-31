@@ -17,7 +17,7 @@ var userRoutes = require('./routes/user');
 
 var app = express();
 //var url = 'mongodb://localhost:27017/shoppingcart';
-var url = 'mongodb://root:root@ds137220.mlab.com:37220/shoppingcart-db';
+var url = 'mongodb://root:root@ds237717.mlab.com:37717/nodejsshoppingcart';
 mongoose.connect(url);
 require('./config/passport');
 
