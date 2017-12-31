@@ -7,7 +7,7 @@ You need Node, NPM and MongoDB properly installed.
 
 Clone this repository
 ``` shell
-    git clone https://github.com/tanmoysarkar/ShoppingCart.git
+    git clone https://github.com/tanmoysarkar/nodeshoppingcart.git
 ```
 
 Install dependencies
